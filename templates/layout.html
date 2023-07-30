@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head>
+   <title>fiordlanddroneclub</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ </head>
+ <body>
+   <div class="grid-container">
+  <div class="grid-item">{% include 'header.html' %}</div>
+  <div class="grid-item">{% include 'nav.html' %}</div>
+  <div class="grid-item">{% block content %}{% endblock %}</div> 
+  <div class="grid-item">{% include 'footer.html' %}</div>  
+</div>
+
+ </body>
+</html>

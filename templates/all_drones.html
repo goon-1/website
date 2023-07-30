@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1>all drones</h1>
+<ul>
+    
+    {# Jinja loop, almost like Python #}
+    {% for drone in drones %}
+      <li>
+        {{"drone id:"}}
+        {{ drone[0]}}
+        <br>
+        {{"drone name:"}}
+        {{ drone[2]}}
+        <br>
+        {{"drone type:"}}
+        {{ drone[1]}}
+        <br>
+        <br>
+        
+      </li>
+    {% endfor %}
+  
+</ul>
+
+{% endblock %}

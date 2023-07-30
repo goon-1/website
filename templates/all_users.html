@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1>all users</h1>
+<ul>
+    
+    {# Jinja loop, almost like Python #}
+    {% for user in users %}
+      <li>
+        {{"user ID:"}}
+        {{ user[0]}}
+        <br>
+        {{"user name:"}}
+        {{ user[1]}}
+        <br>
+        <br>
+        
+      </li>
+    {% endfor %}
+  
+</ul>
+
+{% endblock %}

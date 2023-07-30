@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1>add user page</h1>
+
+<form action="{{ url_for("add_user")}}" method="post">
+
+<hr>
+<label for="uID">user id: (only use numbers)</label>
+<input type="text" id="uID" name="uID" placeholder="remember this" maxlength="32"> </br>
+
+<hr>
+<label for="fname">first name:</label>
+<input type="text" id="fname" name="fname" placeholder="e.g. Shaun" maxlength="32"></br>
+
+  
+<hr>
+<label for="lname">last name:</label>
+<input type="text" id="lname" name="lname" placeholder="e.g. Cantwell" maxlength="32"></br>
+
+<hr>
+<label for="password">password:</label>
+<input type="text" id="password" name="password" placeholder="also remember" maxlength="32"></br>
+
+<hr>
+<button type="submit" class='glow-on-hover'>create account</button></br>
+</form>
+
+{% endblock %}

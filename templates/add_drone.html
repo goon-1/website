@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1>add drone page</h1>
+
+<form action="{{ url_for("add_drone")}}" method="post">
+
+<hr>
+<label for="dID">drone id:</label>
+<input type="text" id="dID" name="dID" placeholder="any number" maxlength="32"> </br>
+
+<hr>
+<label for="dTYPE">drone type:</label>
+<input type="text" id="dTYPE" name="dTYPE" placeholder="drone type" maxlength="32"></br>
+
+<hr>
+<label for="dNAME">drone name:</label>
+<input type="text" id="dNAME" name="dNAME" placeholder="drone name" maxlength="32"></br>
+
+<hr>
+<label for="uNAME">belongs to:</label>
+<input type="text" id="uNAME" name="uNAME" placeholder="user id" maxlength="32"></br>
+
+
+<hr>
+<button type="submit" class="glow-on-hover">add drone</button></br>
+</form>
+
+{% endblock %}
